@@ -35,6 +35,10 @@ public class Produtos {
 	@Column(name="descricao")
 	private String descricao;
 	
+	public Long getId() {
+		return this.id;
+	}
+	
 	public String getNomeProduto() {
 		return nomeProduto;
 	}

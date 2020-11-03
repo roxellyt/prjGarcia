@@ -16,6 +16,7 @@ public class PedidoDTO {
 	
 	private String descricao; 
 	
+	
 	public String getNomeProduto() {
 		return nomeProduto;
 	}

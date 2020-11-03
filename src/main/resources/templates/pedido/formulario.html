@@ -11,14 +11,12 @@
 				<h1 class="display-4">Novo Pedido</h1>
 			</div>
 			<div class="card mt-3">
-				<form th:object="${pedido}" class="card-body" action="/pedido/novo" method="POST">
+				<form class="card-body" action="/pedido/novo" method="POST">
 				
 					<div class="form-group">
 						<labe for="nomeProduto">Produto</label>
-						<input th:field="*{nomeProduto}"class="form-control" name="nomeProduto" placeholder="Nome do produto"/>
+						<input class="form-control" name="nomeProduto" placeholder="Nome do produto"/>
 						<small>Informe qual o nome do produto</small>
-						<div th:errors="*{nomeProduto}">
-						</div>
 					</div>
 					
 			
