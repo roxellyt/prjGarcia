@@ -14,10 +14,13 @@
 
 	<body>
 		
+	
 		<div class="logo mb-3 p-3 d-flex justify-content-between">
 			<span>App</span>
-			<span>Logout</span>
+			<a href="/login" sec:authorize="!isAuthenticated()" class="text-light">Login</a>
+			<a href="/logout" sec:authorize="isAuthenticated()" class="text-light">Logout</a>
 		</div>
+		
 		
 		<div class="container mb-3 mt-4 p-2">
 			<div class="jumbotron mb-0">
